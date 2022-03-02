@@ -12,7 +12,7 @@ namespace WBL
     {
         Task<DBEntity> Create(ParametroEntity entity);
         Task<DBEntity> Delete(ParametroEntity entity);
-        Task<IEnumerable<ParametroService>> Get();
+        Task<IEnumerable<ParametroEntity>> Get();
         Task<ParametroEntity> GetById(ParametroEntity entity);
         Task<DBEntity> Update(ParametroEntity entity);
     }
@@ -29,13 +29,13 @@ namespace WBL
         #region MetodosCRUD
 
         //Metodo Get
-        public async Task<IEnumerable<ParametroService>> Get()
+        public async Task<IEnumerable<ParametroEntity>> Get()
         {
 
             try
             {
 
-                var result = sql.QueryAsync<ParametroService>("dbo.ParametroObtener");
+                var result = sql.QueryAsync<ParametroEntity>("dbo.ParametroObtener");
                 return await result;
 
             }
