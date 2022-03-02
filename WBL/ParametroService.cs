@@ -1,13 +1,14 @@
-﻿using BD;
-using Entity;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BD;
+using Entity;
 
 namespace WBL
 {
+
     public interface IParametroService
     {
         Task<DBEntity> Create(ParametroEntity entity);
@@ -83,6 +84,7 @@ namespace WBL
                     entity.Valor,
                     entity.Estado
 
+
                 });
 
                 return await result;
@@ -113,7 +115,6 @@ namespace WBL
                     entity.Descripcion,
                     entity.Valor,
                     entity.Estado
-
 
                 });
 
@@ -160,12 +161,7 @@ namespace WBL
 
     }
 
-
-
-
-
-
-
-
 }
+
+
 

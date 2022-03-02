@@ -1,8 +1,8 @@
 ﻿CREATE PROCEDURE [dbo].[ParametroInsertar]
 	@Codigo VARCHAR(250),
 	@Descripcion VARCHAR(250),
-	@Valor INT,
-	@Estado VARCHAR(250)
+	@Valor VARCHAR(250),
+	@Estado INT
 
 
 AS BEGIN
