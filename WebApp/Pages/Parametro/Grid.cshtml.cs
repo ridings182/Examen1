@@ -61,7 +61,7 @@ namespace WebApp.Pages.Parametro
             try
             {
 
-                var result = await parametroService.Delete(new()
+                var result = await parametroService.Delete( new()
                 {
                     IdParametro = id
 
