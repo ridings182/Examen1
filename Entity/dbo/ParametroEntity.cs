@@ -13,7 +13,7 @@ namespace Entity
         public string Codigo { get; set; }
         public string Descripcion { get; set; }
         public int? Valor { get; set; }
-        public int Estado { get; set; }
+        public int? Estado { get; set; }
 
 
     }
